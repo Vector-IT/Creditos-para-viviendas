@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="creditos" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Stylesheets
+	============================================= -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<link rel="stylesheet" href="css/components/radio-checkbox.css" type="text/css" />
+<link rel="stylesheet" href="css/components/timepicker.css" type="text/css" />
+<link rel="stylesheet" href="css/components/daterangepicker.css" type="text/css" />
+<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+<!-- Document Title
+	============================================= -->
+<title>Créditos para Viviendas</title>
+</head>
+<body class="stretched">
+<!-- Document Wrapper
+	============================================= -->
+<div id="wrapper" class="clearfix">
+  <!-- Header
+		============================================= -->
+  <header id="header">
+    <div id="header-wrap">
+      <div class="container clearfix">
+        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+        <!-- Logo
+					============================================= -->
+        <div id="logo" class="divcenter"> <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img class="divcenter" src="images/logo.png" alt="creditos"></a> <a href="index.html" class="retina-logo" data-dark-logo="images/logo@2x.png"><img class="divcenter" src="images/logo@2x.png" alt="creditos"></a> </div>
+        <!-- #logo end -->
+        <!-- Primary Navigation
+					============================================= -->
+        <!-- #primary-menu end -->
+      </div>
+    </div>
+  </header>
+  <!-- #header end -->
+  <section id="slider"> <img src="images/slide.jpg"  style=" width:100%" alt="Image"> </section>
+  <!-- Content
+		============================================= -->
+  <section id="content">
+    <div class="content-wrap" style="padding-bottom:0;">
+      <div class="container clearfix">
+        <div class="row clearfix gardel">
+          <h1 class="center">Préstamos a su medida </h1>
+          <div class="col-lg-4 ">
+            <div class="capsula">
+              <h2>PASO 1</h2>
+              <p>Complete el formulario con sus datos</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="capsula">
+              <h2>PASO 2</h2>
+              <p>Verificaremos sus datos y disponibilidad para acceder al préstamo</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="capsula">
+              <h2>PASO 3</h2>
+              <p> Le brindaremos la opciones de prestamos a medida para obtener su vivienda soñada </p>
+            </div>
+          </div>
+        </div>
+        <div class="row col-padding-dos topmargin ">
+          <div class="col-lg-2" style=" background:#21BBF9;color:#FFF; text-align:center; line-height:32px">CRÉDITO YA</div>
+          <div class="col-lg-10" style=" background:#3F3F3F; color:#FFF;text-align:center;line-height:32px">Solicite su crédito en simples pasos. Sin requisitos, solo con DNI.</div>
+        </div>
+        <div class="row clearfix topmargin">
+          <h1 class="center nomargin">Solicite su préstamos online</h1>
+        </div>
+      </div>
+      <div class="section gardel">
+        <div class="container" style="background:#FFF;">
+          <div class="row col-padding" id="divPrestamo">
+            <!-- VECTOR-IT -->
+            <div id="prestamoON" style="display:none; position:fixed; left:0px; right:0px; top:0px; bottom:0px; background: rgba(255,255,255,0.85); z-index:9999999;">
+                <div class="text-center" style="display: table; position:absolute; width:100%; height:100%;">
+                  <div style="display:table-cell; vertical-align:middle;">
+                    <h2 class="text-center">Aguarde unos instantes estamos procesando su solicitud</h2>
+                    <img src="php/spinner.gif" style="margin: 0 auto;"/> 
+                  </div>  
+                </div>
+            </div>
+            <div class="row" id="prestamoOK" style="display: none;">
+              <h2 class="text-center">Su prestamo ha sido aprobado para las siguientes f&aacute;bricas</h2>
+              <div class="text-center" style="margin-top: 40px;">
+                <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/3-Logo.jpg" style="width:180px; height: auto;" /> 
+                <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/5-Logo.png" style="width:180px; height: auto;" /> 
+                <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/2-Logo.jpg" style="width:180px; height: auto;" />
+              </div>
+            </div>
+            <form id="frmPrestamo" method="POST" onsubmit="return false;">
+            <h3 class="center">Complete el siguiente formulario</h3>
+            <p class="center">Recibirá detalles de financiación y toda la información que necesite par llegar a su casa propia</p>
+            <img src="images/arrow.png" alt="#">
+            <div class="col-lg-3 center topmargin hidden-xs hidden-sm"></div>
+            <div class="col-lg-6 center topmargin">
+              <label for="cmbIngreso">Seleccione su ingreso apróximado</label>
+              <select id="cmbIngreso" name="Ingreso" class="sm-form-control">
+                <option value="" selected disabled>-- Seleccione su ingreso apróximado --</option>
+                <option>de $5000 a $10000</option>
+                <option>de $10000 a $15000</option>
+                <option>de $15000 a $20000</option>
+                <option>de $20000 a $25000</option>
+                <option>más de $25000</option>
+              </select>
+              <div class="fleft" style="margin:15px;">
+                <input id="radio-1" class="radio-style" name="radIngreso" type="radio" checked="" value="Ingreso particular">
+                <label for="radio-1" class="radio-style-1-label radio-small">Ingreso Particular</label>
+              </div>
+              <div class="fleft"  style="margin:15px;">
+                <input id="radio-2" class="radio-style" name="radIngreso" type="radio" value="Ingreso familiar">
+                <label for="radio-2" class="radio-style-2-label radio-small">Ingreso Familiar</label>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="txtMonto">Monto solicitado <small>*</small></label>
+                  <select id="txtMonto" name="txtMonto" class="sm-form-control">
+                    <option>de $40000 a $60000</option>
+                    <option>de $60000 a $80000</option>
+                    <option>más de $80000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="txtCUIT">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
+                  <input type="text" id="txtCUIT" name="txtCUIT" value="" class="sm-form-control required" aria-required="true">
+                </div>
+                <div class="col-md-6">
+                  <label for="txtEmail">Email <small>*</small></label>
+                  <input type="email" id="txtEmail" name="txtEmail" value="" class="sm-form-control required" aria-required="true">
+                </div>
+              </div>
+              <h3 id="resultadoCuit" style="margin: 0 !important;"></h3>
+            </div>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="cmbProvincia">Provincia</label>
+                  <select id="cmbProvincia" name="cmbProvincia" class="sm-form-control">
+                    <option>Capital Federal</option>
+                    <option>Buenos Aires</option>
+                    <option>Catamarca</option>
+                    <option>Córdoba</option>
+                    <option>Corrientes</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Entre Ríos</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquén</option>
+                    <option>Río Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fe</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tierra del Fuego</option>
+                    <option>Tucumán</option>
+                  </select>
+              </div>
+              <div class="col-md-6">
+                <label for="txtCiudad">Ciudad <small>*</small></label>
+                <input type="text" id="txtCiudad" name="txtCiudad" value="" class="sm-form-control required" aria-required="true">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="txtTelefono">Teléfono <small>*</small></label>
+                    <input type="tel" id="txtTelefono" name="txtTelefono" value="" class="sm-form-control required" aria-required="true">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="horaDesde">Horario de Contacto</label>
+                        <select class="sm-form-control" id="horaDesde" required="">
+                          <option selected="selected">09 hs</option>
+                          <option>10 hs</option>
+                          <option>11 hs</option>
+                          <option>12 hs</option>
+                          <option>13 hs</option>
+                          <option>14 hs</option>
+                          <option>15 hs</option>
+                          <option>16 hs</option>
+                          <option>17 hs</option>
+                          <option>18 hs</option>
+                          <option>19 hs</option>
+                          <option>20 hs</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="horaHasta">&nbsp;</label>
+                        <select class="sm-form-control" id="horaHasta" required="">
+                          <option selected="selected">09 hs</option>
+                          <option>10 hs</option>
+                          <option>11 hs</option>
+                          <option>12 hs</option>
+                          <option>13 hs</option>
+                          <option>14 hs</option>
+                          <option>15 hs</option>
+                          <option>16 hs</option>
+                          <option>17 hs</option>
+                          <option>18 hs</option>
+                          <option>19 hs</option>
+                          <option>20 hs</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="txtDomicilio">Domicilio <small>*</small></label>
+                <input type="text" id="txtDomicilio" name="txtDomicilio" value="" class="sm-form-control required" aria-required="true">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 center">
+                <label for="txtConsulta">CONSULTA <small>*</small></label>
+                <textarea class="required sm-form-control" id="txtConsulta" name="txtConsulta" rows="6" cols="30" aria-required="true"></textarea>
+                <button class="button button-3d topmargin" type="submit" id="btnSolicitar" name="btnSolicitar" value="submit">SOLICITAR</button>
+              </div>
+            </div>
+            </form>
+            <!-- FIN VECTOR-IT -->
+          </div>
+        </div>
+      </div>
+      <div class="section" style="background:#FFF">
+        <div class="row col-padding-dos">
+          <div class="col-lg-1" ></div>
+          <div class="col-lg-5" >
+            <div class="feature-box bottommargin-lg">
+              <div class="fbox-icon"> <img src="images/1.fw.png" alt="#"> </div>
+              <h3>Créditos a tu medida</h3>
+              <p>Hasta $150.000 en hasta 48 cuotas</p>
+            </div>
+            <div class="feature-box bottommargin-lg">
+              <div class="fbox-icon"> <img src="images/2.fw.png" alt="#"> </div>
+              <h3>100% online</h3>
+              <p>Simple y rápido. Nunca esperás.</p>
+            </div>
+            <div class="feature-box">
+              <div class="fbox-icon"> <img src="images/3.fw.png" alt="#"> </div>
+              <h3>Servicio 24 x 7</h3>
+              <p>Siempre estamos online para que solicites tu crédito</p>
+            </div>
+          </div>
+             <div class="col-lg-1" ></div>
+          <div class="col-lg-5">
+            <div class="feature-box bottommargin-lg">
+              <div class="fbox-icon"> <img src="images/4.fw.png" alt="#"> </div>
+              <h3>Más barato que los bancos</h3>
+              <p>Te presta la gente directamente</p>
+            </div>
+            <div class="feature-box bottommargin-lg">
+              <div class="fbox-icon" style="left:-20px"> <img src="images/5.fw.png" alt="#"> </div>
+              <h3>Sin gastos adicionales</h3>
+              <p>No necesita abrir una cuenta. No hay gastos por
+                cancelar anticipadamente</p>
+            </div>
+            <div class="feature-box">
+              <div class="fbox-icon"> <img src="images/6.fw.png" alt="#"> </div>
+              <h3>Sin burocracia</h3>
+              <p>Siempre estamos online para que solicites tu crédito</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section nomargin" style="background:#007894; border-top:10px solid #CCC; border-bottom:10px solid #CCC;">
+        <div class="row">
+          <div class="col-lg-4"><img src="images/7.fw.png" alt="#"></div>
+          <div class="col-lg-4 center">
+            <h3 style="color:#FFF;">Créditos para acceder a la vivienda que siempre soñó</h3>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #content end -->
+</div>
+<!-- #wrapper end -->
+<!-- Go To Top
+	============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+<!-- External JavaScripts
+	============================================= -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<!-- Date & Time Picker JS -->
+<script type="text/javascript" src="js/components/moment.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script type="text/javascript" src="js/components/timepicker.js"></script>
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="js/components/daterangepicker.js"></script>
+<script type="text/javascript">
+		$(function() {
+			$('.travel-date-group .default').datepicker({
+				autoclose: true,
+				startDate: "today",
+			});
+
+			$('.travel-date-group .today').datepicker({
+				autoclose: true,
+				startDate: "today",
+				todayHighlight: true
+			});
+
+			$('.travel-date-group .past-enabled').datepicker({
+				autoclose: true,
+			});
+			$('.travel-date-group .format').datepicker({
+				autoclose: true,
+				format: "dd-mm-yyyy",
+			});
+
+			$('.travel-date-group .autoclose').datepicker();
+
+			$('.travel-date-group .disabled-week').datepicker({
+				autoclose: true,
+				daysOfWeekDisabled: "0"
+			});
+
+			$('.travel-date-group .highlighted-week').datepicker({
+				autoclose: true,
+				daysOfWeekHighlighted: "0"
+			});
+
+			$('.travel-date-group .mnth').datepicker({
+				autoclose: true,
+				minViewMode: 1,
+				format: "mm/yy"
+			});
+
+			$('.travel-date-group .multidate').datepicker({
+				multidate: true,
+				multidateSeparator: " , "
+			});
+
+			$('.travel-date-group .input-daterange').datepicker({
+				autoclose: true
+			});
+
+			$('.travel-date-group .inline-calendar').datepicker();
+
+			$('.datetimepicker').datetimepicker({
+				showClose: true
+			});
+
+			$('.datetimepicker1').datetimepicker({
+				format: 'LT',
+				showClose: true
+			});
+
+			$('.datetimepicker2').datetimepicker({
+				inline: true,
+				sideBySide: true
+			});
+
+		});
+
+		$(function() {
+			// .daterange1
+			$(".daterange1").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini nomargin",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange2
+			$(".daterange2").daterangepicker({
+				"opens": "center",
+				timePicker: true,
+				timePickerIncrement: 30,
+				locale: {
+					format: 'MM/DD/YYYY h:mm A'
+				},
+				"buttonClasses": "button button-rounded button-mini nomargin",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange3
+			$(".daterange3").daterangepicker({
+				singleDatePicker: true,
+				showDropdowns: true
+			},
+			function(start, end, label) {
+				var years = moment().diff(start, 'years');
+				alert("You are " + years + " years old.");
+			});
+
+			// reportrange
+			function cb(start, end) {
+				$(".reportrange span").html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+			}
+			cb(moment().subtract(29, 'days'), moment());
+
+			$(".reportrange").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini nomargin",
+				"applyClass": "button-color",
+				"cancelClass": "button-light",
+				ranges: {
+				   'Today': [moment(), moment()],
+				   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+				   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+				   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+				   'This Month': [moment().startOf('month'), moment().endOf('month')],
+				   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+				}
+			}, cb);
+
+			// .daterange4
+			$(".daterange4").daterangepicker({
+				autoUpdateInput: false,
+				locale: {
+					cancelLabel: 'Clear'
+				},
+				"buttonClasses": "button button-rounded button-mini nomargin",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			$(".daterange4").on('apply.daterangepicker', function(ev, picker) {
+				$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+			});
+
+			$(".daterange4").on('cancel.daterangepicker', function(ev, picker) {
+				$(this).val('');
+			});
+
+		});
+
+	</script>
+<!-- Footer Scripts
+	============================================= -->
+<script type="text/javascript" src="js/functions.js"></script>
+<!-- VECTOR-IT -->
+<script type="text/javascript" src="js/vectorit.js"></script>
+<div class="modal fade" id="solicitud-dialog" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+        <h2>Su prestamo ha sido aprobado para las siguientes f&aacute;bricas</h2>
+        <div class="text-center">
+          <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/3-Logo.jpg" style="width:180px; height: auto;" /> 
+          <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/5-Logo.png" style="width:180px; height: auto;" /> 
+          <img src="http://ofertasdefabrica.com.ar/admin/imgFabricas/2-Logo.jpg" style="width:180px; height: auto;" />
+	      </div> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FIN VECTOR-IT -->
+</body>
+</html>
