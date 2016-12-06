@@ -2,10 +2,10 @@ $(document).ready(function () {
     $("#txtCUIT").change(function() {
         var cuit = $("#txtCUIT").val().trim();
         var url = "https://soa.afip.gob.ar/sr-padron/v2/persona/" + cuit;
-        
+
         $.get(url, function(data) {
             if (data.success) {
-                $("#resultadoCuit").html(data.data.nombre);
+                $(".resultadoCuit").html(data.data.nombre);
             }
             else {
                 $("#resultadoCuit").html("Error al procesar su CUIL/CUIT, por favor verifique el dato ingresado.");
@@ -15,6 +15,12 @@ $(document).ready(function () {
     });
 
     $("#frmPrestamo").submit(function() {
+		if (($("#resultadoCuit").html().indexOf("Error") > -1) || ($("#resultadoCuit").html() == '')) {
+			alert("Antes de continuar debe ingresar un CUIT válido!");
+			$("#txtCUIT").focus();
+			return false;
+		}
+
         $('#prestamoON').fadeIn();
 
         setTimeout(function() {
@@ -46,7 +52,7 @@ $(document).ready(function () {
             {// code for IE6, IE5
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            
+
             xmlhttp.onreadystatechange = function() {
                 if (xmlhttp.readyState==4 && xmlhttp.status==200) {
                     $('#prestamoON').hide();

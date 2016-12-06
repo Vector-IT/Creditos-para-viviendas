@@ -283,7 +283,7 @@ span.middot {
 
 .rightmargin { margin-right: 50px !important; }
 
-.topmargin { margin-top: 50px !important; }
+.topmargin { margin-top: 25px !important; }
 
 .bottommargin { margin-bottom: 50px !important; }
 
@@ -343,7 +343,7 @@ span.middot {
 
 .noradius { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; -ms-border-radius: 0 !important; -o-border-radius: 0 !important; border-radius: 0 !important; }
 
-.col-padding { padding: 60px; }
+.col-padding { padding: 30px; }
 .col-padding-dos { padding: 0 60px; }
 
 .nopadding { padding: 0 !important; }
@@ -534,8 +534,8 @@ span.middot {
 
 .section {
 	position: relative;
-	margin: 60px 0;
-	padding: 60px 0;
+	margin: 25px 0;
+	padding: 25px 0;
 	background-color: #F9F9F9;
 	overflow: hidden;
 }
@@ -3512,7 +3512,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 .content-wrap {
 	position: relative;
-	padding: 80px 0;
+	padding: 10px 0;
 }
 
 #content .container { position: relative; }
@@ -13527,3 +13527,8 @@ body:not(.no-transition) #wrapper,
 .capsula h2 { text-align:center; background:#3BD27B; color:#FFF!important; font-size:18px; font-weight:100!important; width:30%; margin:0 auto 50px auto}
 .capsula p {font-size:20px; color:#000; text-align:center; line-height:25px!important;}
 .gardel label { margin-top:30px;}
+
+.logoFabrica {
+	width:150px;
+	height: auto;
+}
