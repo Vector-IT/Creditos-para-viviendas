@@ -36,7 +36,7 @@ $(document).ready(function () {
             mensaje+= "Ciudad: " + $("#txtCiudad").val().trim() + "<br>";
             mensaje+= "Telefono: " + $("#txtTelefono").val().trim() + "<br>";
             mensaje+= "Horario de contacto: de " + $("#horaDesde").val() + " a " + $("#horaHasta").val() + "<br>";
-            mensaje+= "Domicilio: " + $("#txtDomicilio").val().trim() + "<br>";
+            //mensaje+= "Domicilio: " + $("#txtDomicilio").val().trim() + "<br>";
             mensaje+= "Consulta: " + $("#txtConsulta").val().trim() + "<br>";
 
             var frmData = new FormData();

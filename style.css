@@ -934,7 +934,7 @@ html[xmlns] .slider-wrap {display: block;}
 
 #header {
 	position: relative;
-	background-color: #007894;
+	background-color: #017F42;
 }
 
 #header .container { position: relative; }
@@ -2043,7 +2043,7 @@ body.top-search-open #top-account { opacity: 0; }
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #007894;
+	background-color: #017F42;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -6615,6 +6615,11 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	letter-spacing: 1px;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.btnAmarillo {
+	background-color: #FBFD38;
+	color: #000;
 }
 
 body:not(.device-touch) .button {
