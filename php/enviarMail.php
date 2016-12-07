@@ -6,7 +6,7 @@
 
 		$titulo = 'Solicitud en Créditos para viviendas';
 
-		$header  = 'MIME-Version: 1.0' . "\r\n";
+		$header = 'MIME-Version: 1.0' . "\r\n";
 		$header.= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$header.= 'From: Creditos para viviendas <info@creditosparaviviendas.com>' . "\r\n";
 		//$header.= 'Bcc: jmperro@gmail.com' . "\r\n";
