@@ -96,7 +96,7 @@
 				<div class="col-lg-3 center hidden-xs hidden-sm"></div>
 				<div class="col-lg-6 center">
 					<label for="cmbIngreso">Seleccione su ingreso apróximado</label>
-					<select id="cmbIngreso" name="Ingreso" class="sm-form-control">
+					<select id="cmbIngreso" name="Ingreso" class="sm-form-control" required>
 						<option value="" selected disabled>-- Seleccione su ingreso apróximado --</option>
 						<option>de $5000 a $10000</option>
 						<option>de $10000 a $15000</option>
@@ -129,11 +129,15 @@
                     <option>de $60000 a $80000</option>
                     <option>más de $80000</option>
                   </select>
-                </div>
+				</div>
+				<div class="col-md-6">
+					<label for="txtNombre">Nombre y Apellido <small>*</small></label>
+					<input type="text" id="txtNombre" name="txtNombre" value="" class="sm-form-control required" aria-required="true" required>
+				</div>
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label for="txtCUIT">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
+                  <label for="txtCUIT">DNI <small>(Sin guiones ni espacios) *</small></label><!-- <span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span> -->
                   <input type="text" id="txtCUIT" name="txtCUIT" value="" class="sm-form-control required" aria-required="true" required>
                 </div>
                 <div class="col-md-6">

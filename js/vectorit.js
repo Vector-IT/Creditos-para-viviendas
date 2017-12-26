@@ -1,32 +1,32 @@
 $(document).ready(function () {
-    $("#txtCUIT").change(function() {
-        var cuit = $("#txtCUIT").val().trim();
-        var url = "https://soa.afip.gob.ar/sr-padron/v2/persona/" + cuit;
+    // $("#txtCUIT").change(function() {
+    //     var cuit = $("#txtCUIT").val().trim();
+    //     var url = "https://soa.afip.gob.ar/sr-padron/v2/persona/" + cuit;
 
-        $.get(url, function(data) {
-            if (data.success) {
-                $(".resultadoCuit").html(data.data.nombre);
-            }
-            else {
-                $("#resultadoCuit").html("Error al procesar su CUIL/CUIT, por favor verifique el dato ingresado.");
-                $("#txtCUIT").focus();
-            }
-        });
-    });
+    //     $.get(url, function(data) {
+    //         if (data.success) {
+    //             $(".resultadoCuit").html(data.data.nombre);
+    //         }
+    //         else {
+    //             $("#resultadoCuit").html("Error al procesar su CUIL/CUIT, por favor verifique el dato ingresado.");
+    //             $("#txtCUIT").focus();
+    //         }
+    //     });
+    // });
 
     $("#frmPrestamo").submit(function() {
-		if (($("#resultadoCuit").html().indexOf("Error") > -1) || ($("#resultadoCuit").html() == '')) {
-			alert("Antes de continuar debe ingresar un CUIT válido!");
-			$("#txtCUIT").focus();
-			return false;
-		}
+		// if (($("#resultadoCuit").html().indexOf("Error") > -1) || ($("#resultadoCuit").html() == '')) {
+		// 	alert("Antes de continuar debe ingresar un CUIT válido!");
+		// 	$("#txtCUIT").focus();
+		// 	return false;
+		// }
 
         $('#prestamoON').fadeIn();
 
         setTimeout(function() {
             var mensaje = "";
             mensaje+= "Registro de solicitud de crédito<br><br>";
-            mensaje+= "Apellido y Nombre: " + $('#resultadoCuit').html().trim() + "<br>";
+            mensaje+= "Apellido y Nombre: " + $('#txtNombre').html().trim() + "<br>";
             mensaje+= "CUIT: " + $("#txtCUIT").val().trim() + "<br>";
             mensaje+= "Ingreso aproximado: " + $("#cmbIngreso").val().trim() + "<br>";
             mensaje+= "Tipo de ingreso: " + $('input[name = "radIngreso"]:checked').val() + "<br>";
@@ -40,7 +40,7 @@ $(document).ready(function () {
             mensaje+= "Consulta: " + $("#txtConsulta").val().trim() + "<br>";
 
             var frmData = new FormData();
-            frmData.append("Nombre", $('#resultadoCuit').html().trim());
+            frmData.append("Nombre", $('#txtNombre').html().trim());
             frmData.append("Email", $("#txtEmail").val().trim());
             frmData.append("Mensaje", mensaje);
 
